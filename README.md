@@ -1,8 +1,10 @@
 # Space Mission Control app and API
 
-This repository contains a REST API and a Single Page Application (SPA) for managing space missions. The API fetches planet data from the Kepler dataset and rocket launch history from the SpaceXData API. This project is built using Node.js, Express, MongoDB with Mongoose for the backend, and React for the frontend. It also utilizes PM2 for server management and Jest with Supertest for testing.
+This repository contains a REST API and a Single Page Application (SPA) for managing space missions. The API fetches planet data from the Kepler dataset and rocket launch history from the SpaceXData API. This project is built using Node.js, Express, MongoDB with Mongoose for the backend, and React for the frontend. It also utilizes PM2 for server management and Jest with Supertest for testing. The app can be deployed in Docker (see installation below).
 
-All tests are rerun on GitHub Actions after commits to main branch.
+All tests are run on GitHub Actions after commits to main branch.
+
+Currently the app is deployed using [adaptable.io](adaptable.io) and can be accessed at: [mission-control.adaptable.app](https://mission-control.adaptable.app/).
 
 ## Installation
 
@@ -57,8 +59,6 @@ Start in Docker:
 4. Start backend: `npm run deploy`
 
 This will build the frontend and start the backend server on port 8000, hosting the SPA. You can now access the application in your browser at `http://localhost:8000`.
-
-Currently the app is deployed using [adaptable.io](adaptable.io) and can be accessed at: [mission-control.adaptable.app](https://mission-control.adaptable.app/).
 
 ## API Endpoints
 
